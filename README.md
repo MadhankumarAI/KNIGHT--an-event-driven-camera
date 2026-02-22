@@ -99,8 +99,3 @@ After raising `C=0.30` and enabling the spatial coherence filter, the noise floo
 
 ---
 
-## Notes
-
-`technical.txt` in the project root has the full documentation — DVS math, every bug encountered, fixes, and design decisions.
-
-cv2.imshow is broken under VNC and renders black regardless of image data. Visualization uses a browser MJPEG stream instead.
