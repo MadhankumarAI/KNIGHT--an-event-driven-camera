@@ -1,0 +1,16 @@
+# DVS Event Camera Pipeline – Requirements
+# Install on Raspberry Pi 5:
+#   pip install -r requirements.txt
+#
+# libcamera / picamera2 must be installed via apt:
+#   sudo apt install -y python3-picamera2 libcamera-apps
+#
+# If using v4l2 fallback (USB cam or older CSI):
+#   pip install opencv-python-headless
+
+numpy>=1.24.0
+opencv-python>=4.8.0           # must have GTK support for cv2.imshow
+# On Raspberry Pi OS, prefer system package instead of pip:
+#   sudo apt install -y python3-opencv
+picamera2>=0.3.19       # Raspberry Pi CSI camera (comment out for USB-cam-only)
+# numba>=0.58.0          # optional: JIT-compiled threshold kernel (uncomment to enable)

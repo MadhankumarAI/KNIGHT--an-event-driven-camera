@@ -1,0 +1,6 @@
+.venv
+__pycache__
+.vscode
+technical.txt
+test_frame.jpg
+debug_frame.jpg
